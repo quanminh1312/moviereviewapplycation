@@ -105,7 +105,7 @@ namespace Movie_review
                 t1.Wait();
                 List<Movie> Movie = t1.Result;
 
-                int ket = (int)Math.Ceiling((float)Movie.Count / 5);
+                int ket = (int)Math.Ceiling((float)Movie.Count / 10);
                 printpage(Movie, page);
                 Console.WriteLine("~~~~~~~~Page Movie Information~~~~~~~~~");
                 Console.WriteLine("1.Next page, press N");
@@ -141,7 +141,7 @@ namespace Movie_review
                         {
                             Console.Clear();
                             app_service4(MovieReview_connect);
-                            ket = (int)Math.Ceiling((float)Movie.Count / 5);
+                            ket = (int)Math.Ceiling((float)Movie.Count / 10);
                             break;
                         }
                     default:
